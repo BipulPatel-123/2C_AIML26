@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>JavaScript Array Functions</h2>
+  <script>
+    let arr = [1, 2, 3, 4, 5];
+    document.write("Original Array: " + arr + "<br>");
+    arr.push(6);
+    document.write("After Push: " + arr + "<br>");
+
+    arr.pop();
+    document.write("After Pop: " + arr + "<br>");
+
+    let arr2 = [10, 20, 30];
+    let combinedArr = arr.concat(arr2);
+    document.write("After Concat: " + combinedArr + "<br>");
+    
+    arr.length = 5;
+    document.write("Array Length: " + arr.length + "<br>");
+
+    arr2.length = 3;
+    document.write("Array 2 Length: " + arr2.length + "<br>");
+
+    unshiftedArr = arr2.unshift(5);
+    document.write("After Unshift: " + arr2 + "<br>");  
+
+    shiftedArr = arr2.shift();
+    document.write("After Shift: " + arr2 + "<br>");  
+
+    slicedArr = arr.slice(1, 5);
+    document.write("After Slice: " + slicedArr + "<br>"); 
+    
+    splicedArr = arr.splice(1, 2, 10, 20);
+    document.write("After Splice: " + arr + "<br>");
+
+    reverseArr = arr2.reverse();
+    document.write("After Reverse: " + reverseArr + "<br>");  
+   
+  
+
+  </script>
+</body>
+</html>
