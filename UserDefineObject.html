@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Define Object </title>
+</head>
+<body>
+  <style></style>
+  <script>
+
+let student = new Object();
+student.name = "Bipul Patel";
+student.id = "250321";
+student.city = "Ghaziabad";
+
+student.learning = function(){
+
+console.log("Learning tech courses");
+
+}
+
+console.log(student.name);
+student.learning();
+
+let s1 = {
+  name: "Bipul Patel",
+  id: "250321",
+  city: "Ghaziabad",
+  learning: function() {
+    console.log("Learning tech courses");
+  }
+};
+console.log(s1.name);
+s1.learning();
+
+
+s1.pincode = "201009";
+s1.yoga = function() {
+  console.log("Learning yoga");
+};
+
+console.log(s1.name);
+s1.learning();
+s1.yoga();
+</script>
+</body>
+</html>
