@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTRATION FORM</title>
+  <style> 
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      
+    }
+    .form-box {
+      width: 300px;
+      margin: 0 auto;
+     border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 10px #000000;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: inset 2px 2px 4px #8869fa;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(34, 215, 34);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 3px 3px 6px #c3f160;
+      font-size: 18px;
+    }
+    h2 {
+      text-align: center;
+      text-shadow: 2px 2px 4px #f90d0d;
+    }
+  </style>
+</head>
+<body>
+   <div class="form-box">
+    <h2>REGISTRATION</h2>
+    <form onsubmit="return validateForm()">
+      
+      <label>Name:</label>
+      <input type="text" id="name" placeholder="Please enter your name">
+
+      <label>Email:</label>
+      <input type="text" id="email" placeholder="Please enter your email">
+
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Please enter your password" >
+
+      <label>Re-enter Password:</label>
+      <input type="password" id="repass" placeholder="Please re-enter your password">
+
+      <label>Mobile No:</label>
+      <input type="text" id="mobile" placeholder="Please enter your mobile number">
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+  
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var pass = document.getElementById("password").value;
+      var repass = document.getElementById("repass").value;
+      var mobile = document.getElementById("mobile").value;
+
+      
+      if (isNaN(name) == false) {
+        alert("Please enter a valid text name (No numbers allowed).");
+        return false;
+      }
+
+  
+      if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+        alert("Please enter a valid Email address containing @ and .");
+        return false;
+      }
+
+      if (pass.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+
+    
+      if (pass != repass) {
+        alert("Passwords do not match.");
+        return false;
+      }
+
+
+      if (isNaN(mobile) || mobile.length != 10) {
+        alert("Mobile number must be exactly 10 digits.");
+        return false;
+      }
+
+
+      alert("Registration Successful!");
+      return true;
+    }
+  </script>
+</body>
+</html>
