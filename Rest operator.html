@@ -5,11 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rest Operator</title>
 </head>
+
 <body>
-  <script>
 
-  
+<script>
 
-  </script>
+function sum(...values) {
+  let total = 0;
+
+  for (let value of values) {
+    total += value;
+  }
+
+  document.write("Sum = " + total + "<br>");
+}
+
+sum(10, 20);
+sum(10, 20, 30);
+sum(10, 20, 30, 40);
+sum(10, 20, 30, 40, 50);
+
+sum ("Bipul",10,20)
+sum 
+
+</script>
+
 </body>
 </html>
