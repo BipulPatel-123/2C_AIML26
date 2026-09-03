@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+<body> 
+<script>
+
+function sum(){
+  let a = 10;
+  let b = 20;
+  let c = a + b;
+  return c;
+}
+
+let sum1 = function(){
+  let a = 10;
+  let b = 20;
+  let c = a + b;
+  return c;
+}
+
+sum1 = () => {
+  let a = 10;
+  let b = 20;
+  let c = a + b;
+  return c;
+}
+
+display = (Bipul) => {
+  document.write(Bipul);
+};
+
+display = Bipul => document.write(Bipul);
+
+FullName = (first, last) => `My name is: ${first} ${last}`;
+
+</script>
+</body>
+</html>
