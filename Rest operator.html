@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+// rest operator is used to represent an indefinite number of arguments as an array.<br>
 <script>
 
 function sum(...values) {
@@ -16,15 +16,25 @@ function sum(...values) {
   for (let value of values) {
     total += value;
   }
-
   document.write("Sum = " + total + "<br>");
 }
+
+function subtract(...values) {
+  let total = 0;
+
+  for (let value of values) {
+    total -= value;
+  }
+  document.write("Subtract = " + total + "<br>");
+}
+
 
 sum(10, 20);
 sum(10, 20, 30);
 sum(10, 20, 30, 40);
 sum(10, 20, 30, 40, 50);
-
+subtract(10,20,40,50);
+subtract(90,70,80,60,10,40);
 sum ("Bipul",10,20)
 sum 
 
