@@ -8,15 +8,29 @@
 <body>
   <script>
 
-let data = [10,20,30,40,50];
-function sum(...args){
-  let sum =0;
-  for (let i of args){
-    sum = sum + i;
-  }
-    document.write("Sum of all element in array = " + sum  + "<br>");
-}
-sum(... data);
+// let data = [10,20,30,40,50];
+
+// function sum(...args){
+//   let sum =0;
+//   for (let i of args){
+//     sum = sum + i;
+//   }
+//     document.write("Sum of all element in array = " + sum  + "<br>");
+// }
+// sum(... data);
+
+let a=[10,20,30,40,50];
+let b=[60,70,80,90,100];
+let c=[...a,...b];
+  function sum(...args){
+       let sum =0;
+     for (let i of args){
+      sum = sum + i;
+      }
+      document.write("Sum of all element in array = " + sum  + "<br>");
+   }
+  sum(... c);
+
 
   </script>
 </body>
