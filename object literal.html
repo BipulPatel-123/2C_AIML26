@@ -8,25 +8,37 @@
 <body>
   <script>
     // object literal
+// let name = "Bipul Patel";
+// let rollno = 101;
+// let student = {
+//   name,
+//   rollno
+// };
+// let n = "name";
+// let student1 ={
+//   [name]: "Bipul Patel"
+// };
+// document.write("Name = " + student1[n] + "<br>");
+// ["FirstName", "LastName"].forEach(function(key){
+//   student1[key] = prompt("Enter " + key);
+// });
+
+// document.write("Name = " + student.name + "<br>");
+// document.write("Roll No = " + student.rollno + "<br>");
+
+
 let name = "Bipul Patel";
 let rollno = 101;
 let student = {
   name,
-  rollno
+  rollno,
+  display (){
+    document.write("Name = " + this.name + "<br>");
+    document.write("Roll No = " + this.rollno + "<br>");
+  }
 };
-let n = "name";
-let student1 ={
-  [name]: "Bipul Patel"
-};
-document.write("Name = " + student1[n] + "<br>");
-["FirstName", "LastName"].forEach(function(key){
-  student1[key] = prompt("Enter " + key);
-});
 
-
-document.write("Name = " + student.name + "<br>");
-document.write("Roll No = " + student.rollno + "<br>");
-
+student.display();
 
   </script>
 </body>
