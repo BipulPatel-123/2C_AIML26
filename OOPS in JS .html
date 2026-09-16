@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOPS In JavaScript</title>
+</head>
+<body>
+  //Class is a blueprint for creating objects. It encapsulates data for the object and methods to manipulate that data.<br>
+  //objects are instances of classes. They can have properties and methods that define their behavior.<br>
+  //constructor is a special method for creating and initializing an object created with a class. It is called when an instance of the class is created.<br>
+  //Data members are variables that hold data specific to an object. They are defined within a class and can be accessed using the object instance.<br>
+  //Member functions are functions defined within a class that operate on the data members of the class. They define the behavior of the objects created from the class.<br>
+  //Inheritance is a mechanism where one class can inherit properties and methods from another class. It allows for code reusability and establishes a relationship between classes.<br>
+  //static variales and functions are associated with the class itself rather than any particular instance of the class. They can be accessed without creating an instance of the class.<br>
+<script>
+  //constructor function
+  class Student {
+    constructor() {
+     document.write("Hello, I am Alpha "+ "<br>"); 
+    }
+  }
+
+  let student1 = new Student(); 
+  let student2 = new Student();
+//Data member and constructor
+  class student {
+    constructor(name) {
+      this.name = name;
+      document.write("Hello " + name + "<br>");
+    }
+    // Normal method
+    info() {
+      document.write("Bipul Patel" + "<br>");
+      document.write(this.name + "<br>");
+    }
+
+    static display(name) {
+      document.write(name);
+    }
+  }
+  let student4 = new student("Beta");
+  let student5 = new student("Bipul Patel");
+  student5.info();
+</script>
+
+</body>
+</html>
